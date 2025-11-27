@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>birthday card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preload" as="image" href="images/memory1-pra.jpg">
+<link rel="preload" as="image" href="images/musuem1-pra.jpg">
+<link rel="preload" as="image" href="images/treasure.jpg">
+<link rel="preload" as="image" href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXBsOWxwdTEyN3AxMTFnN3llbG92ZXV4NGhlb3pxZXhrZXplOGlkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DhstvI3zZ598Nb1rFf/giphy.gif">
+<link rel="preload" as="image" href="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHE3MjEwYjRkN3d0cGM4NjhyNXZwcXduZGR3aDF5eTlmODc4Ymk4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfZWRnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fHi4BvgRGmDBT88ltA/giphy.gif">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Happy birthday Prabhakaran🎉(late)</h1>
+            <img id="bff-img" src="images/Prabhakaran.jpeg">
+            <h2 id="bday-age">30 years old(probably)</h2>
+            <h4 id="bday-date">Around Sep or Nov?</h4>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Here's how happy I am for you 🥳</h2>
+            <h3 class="gift-hint">(Tap the gift)</h3>
+            <div class="gift-img" id="gift-img-happy"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">The you in my memory</h2>
+            <div class="gift-img" id="gift-img-hot"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Where we stumbled across around xmas</h2>
+            <div class="gift-img" id="gift-img-genius"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Treasure</h2>
+            <div class="gift-img" id="gift-img-badass"></div>
+        </div>
+        
+         <div class="gift-section">
+            <h2 class="gift-title">This one's for you, my friend 🥂</h2>
+            <div class="gift-img" id="gift-img-cheers"></div>
+        </div>
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const gifts = document.querySelectorAll('.gift-img');
+
+        gifts.forEach(gift => {
+            // The 'click' event handles both mouse clicks (desktop) and taps (mobile)
+            gift.addEventListener('click', function() {
+                // .toggle() is a much cleaner way to switch the class on/off
+                gift.classList.toggle('revealed');
+            });
+        });
+    });
+</script>
+        
+    </body>
+</html>
